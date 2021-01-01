@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ashley's Farm</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="primary-header container group">
+            <h1 class="logo">
+                <a href="home.html">ASHLEY'S <br> FARM</a>
+            </h1>
+            <div class="side-header">
+                <h3 class="tagline"><i>Est. 2030</i> – <b>Seattle, WA</b></h3>
+                <nav class="primary-nav">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li><!--
+                        --><li><a href="plants.html">PLANTS</a></li><!--
+                        --><li><a href="animals.html">ANIMALS</a></li><!--
+                        --><li><a href="shop.html">SHOP</a></li><!--
+                        --><li><a href="visit.html">VISIT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="row-alt light">
+            <div class="lead container">
+                <h2>Plan Your Visit</h2>
+                <p>Free-ranging chickens, baskets of produce fresh from the garden, nests of eggs, baby animals, and more are waiting to welcome you at the farm.</p>
+            </div>
+        </section>
+        <section class="row light">
+            <div class="grid">
+                <section class="farm-location">
+                    <div class="col-1-3">
+                        <h2>Farm Location</h2>
+                        <p>12001 Main St, Bellevue, WA 98005, United States</p>
+                        <h4>Opening Hours</h4>
+                        <ol class="hours">
+                            <li><span class="list-term">Monday</span> – &nbsp;10am to 6pm</li>
+                            <li><span class="list-term">Tuesday</span> – &nbsp;10am to 6pm</li>
+                            <li><span class="list-term">Wednesday</span> – &nbsp;10am to 6pm</li>
+                            <li><span class="list-term">Thursday</span> – &nbsp;10am to 6pm</li>
+                            <li><span class="list-term">Friday</span> – &nbsp;10am to 7pm</li>
+                            <li><span class="list-term">Saturday</span> – &nbsp;9am to 7pm</li>
+                            <li><span class="list-term">Sunday</span> – &nbsp;Closed all day</li>
+                        </ol>
+                    </div><!--
+                    --><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.8711851582275!2d-122.18094518432096!3d47.609194379184764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c66ffcf2bb7%3A0xf3a991ee744c3f03!2sBellevue%20Botanical%20Garden!5e0!3m2!1sen!2sca!4v1609271843867!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </section>
+            </div>
+        </section>
+        <section class="container group dark">
+            <section class="seasons">
+                <div class="section-head">
+                    <h2>Seasonal Changes</h2>
+                    <p>Like anything in nature, the farm changes with the seasons. We are open year-round so there are new activities every season.</p>
+                </div>
+                <div class="col-1-4 left">
+                    <img class="side-pic" src="images/annie-review.jpg">
+                    <h4>Spring</h4>
+                </div><!--
+                --><div class="col-1-4">
+                    <img class="side-pic" src="images/emily-review.jpg">
+                    <h4>Summer</h4>
+                </div><!--
+                --><div class="col-1-4">
+                    <img class="side-pic" src="images/hanyuan-review.jpg">
+                    <h4>Fall</h4>
+                </div><!--
+                --><div class="col-1-4">
+                    <img class="side-pic" src="images/hanyuan-review.jpg">
+                    <h4>Winter</h4>
+                </div>
+            </section>
+        </section>
+        <section class="row group light">
+            <div class="grid">
+                <div class="col-1-2 left">
+                    <h2 class="name">Schedule a Tour</h2>
+                    <p>If you're interested in learning more about the farm life and experiencing it in-person, book your visit today! Please note: spaces are limited. Tours are 60 minutes long. Make sure to dress appropriately for the weather!</p>
+                    <img class="side-pic" src="images/ashley-peach.jpg">
+                </div>
+                <div class="col-1-2">
+                    <form>
+                        <fieldset class="schedule-tour">
+                            <label>
+                                Name
+                                <input type="text" name="name" required>
+                            </label>
+                            <label>
+                                Email
+                                <input type="email" name="email" required>
+                            </label>
+                            <label>
+                                Number of Guests
+                                <select name="party-size" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </label>
+                            <label>
+                                Date of Visit
+                                <input type="date" name="visit-date" required>
+                            </label>
+                            <label class="radio">
+                                Time of Visit
+                                <br>
+                                <input type="radio" name="visit-time" value="10:30-11:30"> 10:30am to 11:30am
+                                <br>
+                                <input type="radio" name="visit-time" value="12-1"> 12pm to 1pm
+                                <br>
+                                <input type="radio" name="visit-time" value="2:30-3:30"> 2:30pm to 3:30pm
+                                <br>
+                                <input type="radio" name="visit-time" value="4-5"> 4pm to 5pm<br>
+                            </label>
+                            <label>
+                                Additional Information:
+                                <textarea name="extra-info"></textarea>
+                            </label>
+                        </fieldset>
+                        <input class="btn btn-default" type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div> 
+        </section>
+        <footer class="primary-footer container group">
+            <small>&copy; Ashley's Farm</small>
+            <nav class="secondary-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li><!--
+                    --><li><a href="plants.html">Plants</a></li><!--
+                    --><li><a href="animals.html">Animals</a></li><!--
+                    --><li><a href="shop.html">Shop</a></li><!--
+                    --><li><a href="visit.html">Visit</a></li>
+                </ul>
+            </nav> 
+        </footer>
+    </body>
+</html>

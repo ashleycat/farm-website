@@ -1,0 +1,583 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+   ==========================
+   GRID
+   ==========================
+*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.col-1-4 {
+	width: 25%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+.col-1-2 {
+	width: 50%;
+}
+.col-1-3, .col-2-3, .col-1-2, .col-1-4 {
+	display: inline-block;
+	vertical-align: top;
+}
+.grid, .col-1-3, .col-2-3, .col-1-2, .col-1-4 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container, .grid {
+	margin: 0 auto;
+	width: 960px;
+}
+.container {
+	padding: 30px;
+}
+.dark {
+	padding-top: 48px;
+}
+
+/*
+   ==========================
+   BUTTONS
+   ==========================
+*/
+
+.btn {
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 0;
+	display: inline-block;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+.btn-alt {
+	border: 1px solid #fff;
+	padding: 10px 30px;
+}
+.btn-alt:hover {
+	background: #fff;
+	color: #00bfa5;
+}
+.lead .btn {
+	color: #a9b2b9;
+	border-color: #a9b2b9;
+	padding: 10px 30px;
+}
+.btn-default {
+	border: 0;
+	background: #00bfa5;
+	padding: 10px 30px;
+	font-size: 14px;
+}
+.btn-default:hover {
+	background: #77a198;
+}
+
+/*
+   ==========================
+   HOME
+   ==========================
+*/
+
+.hero {
+	padding: 40px 80px;
+	line-height: 44px;
+	text-align: center;
+}
+.hero h2 {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+.hero p {
+	font-size: 22px;
+}
+.teaser {
+	padding: 20px;
+}
+
+/*
+   ==========================
+   CLEARFIX
+   ==========================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	zoom: 1;
+}
+
+/*
+   ==========================
+   COLUMNS & ROWS
+   ==========================
+*/
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.row, .row-alt {
+	min-width: 960px;
+}
+.row {
+	background: #fff;
+	padding: 66px 0 44px 0;
+}
+.row-alt {
+	background: #cbe2c1;
+	background: linear-gradient(to right, #fff9c4, #fff8e1);
+	padding: 30px 0 22px 0;
+}
+
+/*
+   ==========================
+   HEADER
+   ==========================
+*/
+
+.logo {
+	border-top: 4px solid #00bfa5;
+	padding: 30px 0 15px 0;
+	float: left;
+	font-size: 40px;
+	line-height: 56px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+header.container {
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.side-header {
+	position: absolute;
+	top: 60px;
+	right: 70px;
+	text-align: right;
+}
+.primary-nav {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.tagline {
+	letter-spacing: .5px;
+}
+
+/*
+   ==========================
+   FOOTER
+   ==========================
+*/
+
+.primary-footer small {
+	float: left;
+	font-weight: 400;
+}
+.primary-footer {
+	padding-bottom: 44px;
+	padding-top: 44px;
+	color: #00bfa5;
+	font-size: 15px;
+}
+.secondary-nav {
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+/*
+   ==========================
+   ABOUT ME
+   ==========================
+*/
+
+.me, .review {
+	border: 1px solid #a9b2b9;
+	border-radius: 5px;
+	margin-top: 88px;
+	text-align: center;
+	padding-bottom: 22px;
+	margin-bottom: 30px;
+}
+.profile-pic {
+	border-radius: 50%;
+	height: 150px;
+	margin: -72px 0 22px 0;
+	vertical-align: top;
+}
+
+/*
+   ==========================
+   TYPOGRAPHY
+   ==========================
+*/
+
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+}
+body {
+	font: 300 18px/24px "Lato", "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5 {
+	color: #00bfa5;
+	font-family: "Roboto Slab", serif;
+}
+h1 {
+	font-size: 50px;
+	line-height: 44px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+}
+h3 {
+	font-size: 21px;
+}
+h4 {
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.dark h4 {
+	color: #dfe2e5;
+}
+.dark p, .dark li, .dark label, .dark q {
+	color: #a9b2b9;
+}
+h5 {
+	font-size: 14px;
+}
+p {
+	line-height: 150%;
+}
+.light h4, .light p, .light li, .light label {
+	color: #888;
+}
+b {
+	font-weight: 400;
+}
+i {
+	font-style: italic;
+}
+.section-head {
+	text-align: center;
+}
+.section-head h2 {
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+.section-head p {
+	font-size: 20px;
+}
+.quote {
+	padding: 2px 30px;
+}
+.quote p {
+	margin: 10px 0 0 0;
+	font-size: 16px;
+	text-align: right;
+}
+.seasons .side-pic {
+	margin-bottom: 10px;
+}
+.seasons {
+	text-align: center;
+}
+
+/*
+   ==========================
+   LINKS
+   ==========================
+*/
+
+a {
+	color: #00bfa5;
+	text-decoration: none;
+}
+a:hover {
+	color: #a9b2b9;
+}
+.teaser a:hover h3 {
+	color: #a9b2b9;
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+.primary-footer a, .primary-header a {
+	color: #fff;
+}
+.primary-footer a:hover, .primary-header a:hover {
+	color: #00bfa5;
+}
+
+/*
+   ==========================
+   LEADS
+   ==========================
+*/
+
+.lead {
+	text-align: center;
+}
+.lead p {
+	font-size: 21px;
+	line-height: 33px;
+}
+.lead h2 {
+	font-size: 36px;
+	line-height: 70px;
+}
+
+/*
+   ==========================
+   BACKGROUNDS
+   ==========================
+*/
+
+body {
+	background: #263238;
+}
+.hero {
+	background-image: url("images/farm-header.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+}
+.hero .container {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 20px;
+	padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*
+   ==========================
+   LISTS
+   ==========================
+*/
+
+nav li {
+	display: inline-block;
+	margin: 0 8px;
+}
+nav li:last-child {
+	margin-right: 0;
+}
+ol, ul {
+	margin-bottom: 22px;
+}
+ul li {
+	list-style: circle inside;
+}
+ol li {
+	list-style: decimal;
+	padding-left: 3px;
+	margin-left: 15px;
+	margin-bottom: 8px;
+}
+.list-term {
+	color: #fff;
+	margin-right: 5px;
+}
+.row .list-term {
+	/* color: #424242; */
+	color: #888;
+	font-weight: 400;
+}
+.hours li {
+	list-style: circle inside;
+}
+
+/*
+   ==========================
+   IMAGES
+   ==========================
+*/
+
+img {
+	border-radius: 5px;
+}
+.teaser img {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 22px;
+}
+.side-pic {
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+/*
+   ==========================
+   TABLES
+   ==========================
+*/
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+th, td {
+	border: 1px solid #77a198;
+	padding: 10px 20px;
+	vertical-align: middle;
+}
+.item, th {
+	font-weight: 400;
+}
+.stock, .qty {
+	text-align: center;
+}
+.price-math {
+	text-align: right;
+}
+.text-offset {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+/*
+   ==========================
+   MAPS
+   ==========================
+*/
+
+.farm-location {
+	margin-bottom: 22px;	
+}
+.map {
+	height: 385px;
+}
+
+/*
+   ==========================
+   FORMS
+   ==========================
+*/
+
+form {
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+	padding: 25px;
+	width: 100%;
+	margin-bottom: 22px;
+} 
+.schedule-tour label {
+	cursor: pointer;
+	font-weight: 400;
+}
+.schedule-tour input, .schedule-tour select, .schedule-tour textarea {
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+	display: block;
+	margin: 5px 0 27px 0;
+	padding: 5px 8px;
+}
+.schedule-tour input, .schedule-tour textarea {
+	width: 100%;
+}
+.schedule-tour select {
+	height: 34px;
+	width: 60px;
+}
+.schedule-tour textarea {
+	height: 78px;
+}
+.radio input {
+	display: inline-block;
+	width: 15px;
+	margin-top: 14px;
+	margin-bottom: 0;
+}
+label.radio {
+	display: block;
+	margin-bottom: 27px;
+}
+
+/*
+   ==========================
+   CARDS
+   ==========================
+*/
+
+.card {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.card img {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin: 0;
+}
+.card-text {
+	padding: 10px 20px;
+}
+.card-text h4 {
+	margin: 0;
+	display: inline-block;
+}
