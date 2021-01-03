@@ -134,7 +134,7 @@ table {
 */
 
 .hero {
-	padding: 40px 80px;
+	padding: 40px 0;
 	line-height: 44px;
 	text-align: center;
 }
@@ -239,8 +239,8 @@ header.container {
 	font-weight: 400;
 }
 .primary-footer {
-	padding-bottom: 44px;
-	padding-top: 44px;
+	padding-bottom: 15px;
+	padding-top: 36px;
 	color: #00bfa5;
 	font-size: 15px;
 }
