@@ -83,11 +83,9 @@ table {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.container {
+.my-container {
 	margin: 0 auto;
 	width: 960px;
-}
-.container {
 	padding: 30px;
 }
 .dark {
@@ -128,15 +126,15 @@ table {
 	letter-spacing: 3px;
 	font-weight: 100;
 }
-header.container {
-	position: relative;
+header.my-container {
+	/* position: relative; */
 	padding-top: 0;
 	padding-bottom: 0;
 }
 .side-header {
-	position: absolute;
+	/* position: absolute;
 	top: 60px;
-	right: 70px;
+	right: 70px; */
 	text-align: right;
 }
 .primary-nav {
@@ -242,11 +240,11 @@ header.container {
 .right {
 	float: right;
 }
-.row,
+.my-row,
 .row-alt {
 	min-width: 960px;
 }
-.row {
+.my-row {
 	background: #fff;
 	padding: 66px 0 44px 0;
 }
@@ -423,7 +421,7 @@ body {
 	background-repeat: no-repeat; 
 	background-size: cover; 
 }
-.hero .container {
+.hero .my-container {
 	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 20px;
 	padding-left: 50px;
@@ -460,7 +458,7 @@ ol li {
 	color: #fff;
 	margin-right: 5px;
 }
-.row .list-term {
+.my-row .list-term {
 	/* color: #424242; */
 	color: #888;
 	font-weight: 400;

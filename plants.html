@@ -2,37 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ashley's Farm</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="primary-header container group">
-            <h1 class="logo">
-                <a href="home.html">ASHLEY'S <br> FARM</a>
-            </h1>
-            <div class="side-header">
-                <h3 class="tagline"><i>Est. 2030</i> – <b>Seattle, WA</b></h3>
-                <nav class="primary-nav">
-                    <ul>
-                        <li><a href="home.html">HOME</a></li><!--
-                        --><li><a href="plants.html">PLANTS</a></li><!--
-                        --><li><a href="animals.html">ANIMALS</a></li><!--
-                        --><li><a href="shop.html">SHOP</a></li><!--
-                        --><li><a href="visit.html">VISIT</a></li>
-                    </ul>
-                </nav>
+        <header class="primary-header container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 class="logo">
+                    <a href="home.html">ASHLEY'S <br> FARM</a>
+                    </h1>
+                </div>
+                <div class="col-md-7">
+                    <div class="side-header">
+                        <h3 class="tagline"><i>Est. 2030</i> – <b>Seattle, WA</b></h3>
+                        <nav class="primary-nav">
+                            <ul>
+                                <li><a href="home.html">HOME</a></li><!--
+                                --><li><a href="plants.html">PLANTS</a></li><!--
+                                --><li><a href="animals.html">ANIMALS</a></li><!--
+                                --><li><a href="shop.html">SHOP</a></li><!--
+                                --><li><a href="visit.html">VISIT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </header>
         <section class="row-alt light">
-            <div class="lead container">
+            <div class="lead my-container">
                 <h2>Fresh Local Produce</h2>
                 <p>It doesn't get any more local than this! Freshness plays a big role in taste, so you will be able to enjoy the best organic produce.</p>
             </div>
         </section>
-        <section class="row light">
-            <div class="container"> <!--Spring-->
+        <section class="my-row light">
+            <div class="my-container"> <!--Spring-->
                 <section class="teaser col-1-3"> 
                     <h4>Potatoes</h4>
                     <img src="images/potatoes.jpg">
@@ -73,7 +81,7 @@
                 </section>
             </div>
         </section>
-        <section class="container group dark">
+        <section class="my-container group dark">
             <div class="col-2-3 left">
                 <h2>Enjoying the Harvest</h2>
                 <p>One of the easiest ways to make food tasier is to use fresh herbs.</p>
@@ -90,8 +98,8 @@
                 <img src="images/herb-bundle.jpg" class="col-pic">
             </div>
         </section>
-        <section class="row group light">
-            <div class="container">
+        <section class="my-row group light">
+            <div class="my-container">
                 <div class="col-1-3 left">
                     <img src="images/cherry-tree.jpg" class="col-pic">
                     <img src="images/cherry-jam.jpg" class="col-pic">
@@ -112,23 +120,29 @@
                         <li>In a small saucepan, heat the water to a boil. Add in the pectin and use an immersion blender to combine. Once the pectin is dissolved, remove from heat.</li>
                         <li>Pour the pectin/water mixture into the cherry mixture.</li>
                         <li>You'll see the jam begin to set almost immediately. Just keep stirring for a few minutes while it all combines.</li>
-                        <li>Scoop out the jam into freezer-safe containers.</li>
-                        <li>Allow the containers to sit at room temperature for a few hours. After the jam has completely set, transfer it to the freezer.</li>
+                        <li>Scoop out the jam into freezer-safe my-containers.</li>
+                        <li>Allow the my-containers to sit at room temperature for a few hours. After the jam has completely set, transfer it to the freezer.</li>
                     </ol>
                 </div>
             </div>
         </section>
-        <footer class="primary-footer container group">
-            <small>&copy; Ashley's Farm</small>
-            <nav class="secondary-nav">
-                <ul>
-                    <li><a href="home.html">Home</a></li><!--
-                    --><li><a href="plants.html">Plants</a></li><!--
-                    --><li><a href="animals.html">Animals</a></li><!--
-                    --><li><a href="shop.html">Shop</a></li><!--
-                    --><li><a href="visit.html">Visit</a></li>
-                </ul>
-            </nav> 
+        <footer class="primary-footer container">
+            <div class="row">
+                <div class="col-4">
+                    <small>&copy; Ashley's Farm</small>
+                </div>
+                <div class="col-8">
+                    <nav class="secondary-nav">
+                        <ul>
+                            <li><a href="home.html">Home</a></li><!--
+                            --><li><a href="plants.html">Plants</a></li><!--
+                            --><li><a href="animals.html">Animals</a></li><!--
+                            --><li><a href="shop.html">Shop</a></li><!--
+                            --><li><a href="visit.html">Visit</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </div>
         </footer>
     </body>
 </html>
