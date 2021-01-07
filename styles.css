@@ -166,9 +166,6 @@ header.my-container {
 	text-align: center;
 	letter-spacing: 1px;
 }
-.secondary-nav li {
-	margin: 0 20px;
-}
 
 /*
    ==========================
@@ -243,18 +240,10 @@ header.my-container {
 .right {
 	float: right;
 }
-.my-row,
-.row-alt {
-	min-width: 960px;
-}
 .my-row {
+	min-width: 960px;
 	background: #fff;
 	padding: 66px 0 44px 0;
-}
-.row-alt {
-	background: #cbe2c1;
-	background: linear-gradient(to right, #fff9c4, #fff8e1);
-	padding: 30px 0 22px 0;
 }
 
 /*
@@ -399,6 +388,9 @@ p a {
 
 .lead {
 	text-align: center;
+	background: #cbe2c1;
+	background: linear-gradient(to right, #fff9c4, #fff8e1);
+	padding: 42px 0 32px 0;
 }
 .lead p {
 	font-size: 21px;
@@ -670,5 +662,9 @@ label.radio {
 	}
 	.secondary-nav {
 		text-align: right;
+	}
+	.lead {
+		padding-left: 18%;
+		padding-right: 18%;
 	}
 }
