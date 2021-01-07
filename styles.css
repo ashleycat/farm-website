@@ -120,22 +120,21 @@ table {
 .logo {
 	border-top: 4px solid #00bfa5;
 	padding: 30px 0 15px 0;
-	float: left;
 	font-size: 40px;
 	line-height: 56px;
 	letter-spacing: 3px;
 	font-weight: 100;
 }
 header.my-container {
-	/* position: relative; */
 	padding-top: 0;
 	padding-bottom: 0;
 }
-.side-header {
-	/* position: absolute;
-	top: 60px;
-	right: 70px; */
-	text-align: right;
+.side-header, 
+.logo {
+	text-align: center;
+}
+.logo br {
+	display: none;
 }
 .primary-nav {
 	font-size: 14px;
@@ -152,19 +151,23 @@ header.my-container {
    ==========================
 */
 
-.primary-footer small {
+.footer small {
 	float: left;
 	font-weight: 400;
+	display: none;
 }
-.primary-footer {
+.footer {
 	padding-bottom: 15px;
 	padding-top: 36px;
 	color: #00bfa5;
-	font-size: 15px;
+	font-size: 16px;
 }
 .secondary-nav {
-	text-align: right;
+	text-align: center;
 	letter-spacing: 1px;
+}
+.secondary-nav li {
+	margin: 0 20px;
 }
 
 /*
@@ -379,12 +382,12 @@ a:hover {
 p a {
 	border-bottom: 1px solid #dfe2e5;
 }
-.primary-footer a,
-.primary-header a {
+.footer a,
+.header a {
 	color: #fff;
 }
-.primary-footer a:hover,
-.primary-header a:hover {
+.footer a:hover,
+.header a:hover {
 	color: #00bfa5;
 }
 
@@ -436,7 +439,7 @@ body {
 
 nav li {
 	display: inline-block;
-	margin: 0 8px;
+	margin: 0 12px;
 }
 nav li:last-child {
 	margin-right: 0;
@@ -602,4 +605,70 @@ label.radio {
 .card-text h4 {
 	margin: 0;
 	display: inline-block;
+}
+
+/*
+   ==========================
+   MEDIA QUERIES
+   ==========================
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.logo,
+	.side-header {
+		text-align: center;
+	}
+	.logo br {
+		display: none;
+	}
+	.footer small {
+		display: none;
+	}
+	.secondary-nav {
+		text-align: center;
+	}
+	
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.logo {
+		text-align: left;
+	}
+	.logo br {
+		display: inline;
+	}
+	.side-header {
+		margin-top: 55px;
+		text-align: right;
+	}
+	.footer small {
+		display: inline;
+	}
+	.secondary-nav {
+		text-align: right;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.logo {
+		margin-left: 70px;
+		text-align: left;
+	}
+	.logo br {
+		display: inline;
+	}
+	.side-header {
+		margin-top: 55px;
+		margin-right: 70px;
+		text-align: right;
+	}
+	.footer small {
+		display: inline;
+	}
+	.secondary-nav {
+		text-align: right;
+	}
 }
