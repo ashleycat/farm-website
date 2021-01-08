@@ -83,13 +83,30 @@ table {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.my-container {
-	margin: 0 auto;
-	width: 960px;
-	padding: 30px;
-}
 .dark {
 	padding-top: 48px;
+}
+.body-content {
+	padding: 60px 10%;
+}
+
+/*
+   ==========================
+   COLUMNS & ROWS
+   ==========================
+*/
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.light {
+	background: #fff;
+}
+.teaser {
+	padding: 20px;
 }
 
 /*
@@ -125,7 +142,7 @@ table {
 	letter-spacing: 3px;
 	font-weight: 100;
 }
-header.my-container {
+header.body-content {
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -224,27 +241,6 @@ header.my-container {
 .hero p {
 	font-size: 22px;
 }
-.teaser {
-	padding: 20px;
-}
-
-/*
-   ==========================
-   COLUMNS & ROWS
-   ==========================
-*/
-
-.left {
-	float: left;
-}
-.right {
-	float: right;
-}
-.my-row {
-	min-width: 960px;
-	background: #fff;
-	padding: 66px 0 44px 0;
-}
 
 /*
    ==========================
@@ -318,7 +314,8 @@ p {
 .light h4,
 .light p,
 .light li,
-.light label {
+.light label,
+.light-colour p {
 	color: #888;
 }
 b {
@@ -388,8 +385,6 @@ p a {
 
 .lead {
 	text-align: center;
-	background: #cbe2c1;
-	background: linear-gradient(to right, #fff9c4, #fff8e1);
 	padding: 42px 0 32px 0;
 }
 .lead p {
@@ -410,13 +405,17 @@ p a {
 body {
 	background: #263238;
 }
+.light-colour {
+	background: #cbe2c1;
+	background: linear-gradient(to right, #fff9c4, #fff8e1);
+}
 .hero {
 	background-image: url("images/farm-header.jpg");
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 }
-.hero .my-container {
+.hero .body-content {
 	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 20px;
 	padding-left: 50px;
@@ -453,8 +452,7 @@ ol li {
 	color: #fff;
 	margin-right: 5px;
 }
-.my-row .list-term {
-	/* color: #424242; */
+.light .list-term {
 	color: #888;
 	font-weight: 400;
 }
@@ -607,6 +605,9 @@ label.radio {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+	.body-content {
+		padding: 60px 12%;
+	}
 	.logo,
 	.side-header {
 		text-align: center;
@@ -625,6 +626,9 @@ label.radio {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.body-content {
+		padding: 60px 5%;
+	}
 	.logo {
 		text-align: left;
 	}
@@ -645,6 +649,9 @@ label.radio {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.body-content {
+		padding: 60px 16.6%;
+	}
 	.logo {
 		margin-left: 70px;
 		text-align: left;
