@@ -82,56 +82,60 @@
                 </div>
             </section>
         </section>
-        <section class="group light body-content">
-            <div class="col-1-2 left">
-                <h2 class="name">Schedule a Tour</h2>
-                <p>If you're interested in learning more about the farm life and experiencing it in-person, book your visit today! Please note: spaces are limited. Tours are 60 minutes long. Make sure to dress appropriately for the weather!</p>
-                <img class="col-pic" src="images/ashley-peach.jpg" alt="Ashley wearing a fromper and sunglasses, standing in an orchard holding up two peaches">
-            </div>
-            <div class="col-1-2">
-                <form>
-                    <fieldset class="schedule-tour">
-                        <label>
-                            Name
-                            <input type="text" name="name" required>
-                        </label>
-                        <label>
-                            Email
-                            <input type="email" name="email" required>
-                        </label>
-                        <label>
-                            Number of Guests
-                            <select name="party-size" required>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </label>
-                        <label>
-                            Date of Visit
-                            <input type="date" name="visit-date" required>
-                        </label>
-                        <label class="radio">
-                            Time of Visit
-                            <br>
-                            <input type="radio" name="visit-time" value="10:30-11:30"> 10:30am to 11:30am
-                            <br>
-                            <input type="radio" name="visit-time" value="12-1"> 12pm to 1pm
-                            <br>
-                            <input type="radio" name="visit-time" value="2:30-3:30"> 2:30pm to 3:30pm
-                            <br>
-                            <input type="radio" name="visit-time" value="4-5"> 4pm to 5pm<br>
-                        </label>
-                        <label>
-                            Additional Information:
-                            <textarea name="extra-info"></textarea>
-                        </label>
-                    </fieldset>
-                    <input class="btn btn-default" type="submit" name="submit" value="Submit">
-                </form>
+        <section class="light body-content">
+            <div class="container">
+                <div class="row">
+                    <section class="featured col-md-6">
+                        <h2 class="name">Schedule a Tour</h2>
+                        <p>If you're interested in learning more about the farm life and experiencing it in-person, book your visit today! Please note: spaces are limited. Tours are 60 minutes long. Make sure to dress appropriately for the weather!</p>
+                        <img class="col-pic" src="images/ashley-peach.jpg" alt="Ashley wearing a fromper and sunglasses, standing in an orchard holding up two peaches">
+                    </section>
+                    <section class="featured col-md-6">
+                        <form>
+                            <fieldset class="schedule-tour">
+                                <label>
+                                    Name
+                                    <input type="text" name="name" required>
+                                </label>
+                                <label>
+                                    Email
+                                    <input type="email" name="email" required>
+                                </label>
+                                <label>
+                                    Number of Guests
+                                    <select name="party-size" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    Date of Visit
+                                    <input type="date" name="visit-date" required>
+                                </label>
+                                <label class="radio">
+                                    Time of Visit
+                                    <br>
+                                    <input type="radio" name="visit-time" value="10:30-11:30"> 10:30am to 11:30am
+                                    <br>
+                                    <input type="radio" name="visit-time" value="12-1"> 12pm to 1pm
+                                    <br>
+                                    <input type="radio" name="visit-time" value="2:30-3:30"> 2:30pm to 3:30pm
+                                    <br>
+                                    <input type="radio" name="visit-time" value="4-5"> 4pm to 5pm<br>
+                                </label>
+                                <label>
+                                    Additional Information:
+                                    <textarea name="extra-info"></textarea>
+                                </label>
+                            </fieldset>
+                            <input class="btn btn-default" type="submit" name="submit" value="Submit">
+                        </form>
+                    </section>
+                </div>
             </div>
         </section>
         <footer class="footer container">
