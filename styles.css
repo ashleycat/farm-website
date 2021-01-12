@@ -345,10 +345,7 @@ i {
 	font-size: 16px;
 	text-align: right;
 }
-.seasons .col-pic {
-	margin-bottom: 10px;
-}
-.seasons {
+.center {
 	text-align: center;
 }
 
@@ -388,7 +385,7 @@ p a {
 
 .lead {
 	text-align: center;
-	padding: 42px 0 32px 0;
+	padding: 42px 40px 32px 40px;
 }
 .lead p {
 	font-size: 21px;
@@ -479,6 +476,10 @@ img {
 }
 .col-pic {
 	max-width: 100%;
+}
+.images img {
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 /*
@@ -627,7 +628,6 @@ label.radio {
 	.secondary-nav {
 		text-align: center;
 	}
-	
 }
 
 /* Medium devices (tablets, 768px and up) */
