@@ -251,8 +251,7 @@ header.body-content {
    ==========================
 */
 
-.me,
-.review {
+.featured-person {
 	border: 1px solid #a9b2b9;
 	border-radius: 5px;
 	margin-top: 88px;
@@ -481,6 +480,10 @@ img {
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
+.side-pic {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
 /*
    ==========================
@@ -650,6 +653,15 @@ label.radio {
 	}
 	.secondary-nav {
 		text-align: right;
+	}
+	.side-pic {
+		margin-top: 0;
+	}
+	article.left-side {
+		margin-left: 20px;
+	}
+	article.right-side {
+		margin-right: 20px;
 	}
 }
 
