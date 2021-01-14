@@ -233,16 +233,16 @@ header.body-content {
 */
 
 .hero {
-	padding: 40px 0;
-	line-height: 44px;
+	padding: 40px;
+	line-height: 54px;
 	text-align: center;
 }
 .hero h2 {
-	font-size: 32px;
-	margin-bottom: 10px;
+	font-size: 30px;
+	margin-bottom: 12px;
 }
 .hero p {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 /*
@@ -414,11 +414,10 @@ body {
 	background-repeat: no-repeat; 
 	background-size: cover; 
 }
-.hero .body-content {
+.hero-content {
 	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 20px;
-	padding-left: 50px;
-    padding-right: 50px;
+	padding: 50px;
 }
 
 /*
@@ -456,7 +455,7 @@ ol li {
 	font-weight: 400;
 }
 .hours li {
-	list-style: circle inside;
+	list-style: circle;
 }
 
 /*
@@ -519,16 +518,21 @@ th {
 
 /*
    ==========================
-   MAPS
+   IFRAMES
    ==========================
 */
 
-.farm-location {
-	margin-bottom: 22px;	
-}
 .map {
 	height: 385px;
-	width: 600px;
+	width: 100%;
+}
+.video {
+	height: 280px;
+	width: 100%;
+	margin-top: 12px;
+}
+.farm-location {
+	margin-bottom: 20px;
 }
 
 /*
@@ -631,6 +635,12 @@ label.radio {
 	.secondary-nav {
 		text-align: center;
 	}
+	.hero-content {
+		padding: 40px 50px;
+	}
+	.video {
+		height: 300px;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -663,6 +673,9 @@ label.radio {
 	article.right-side {
 		margin-right: 20px;
 	}
+	.hero-content {
+		padding: 40px 50px;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -691,5 +704,17 @@ label.radio {
 	.lead {
 		padding-left: 18%;
 		padding-right: 18%;
+	}
+	.hero h2 {
+		font-size: 32px;
+	}
+	.hero p {
+		font-size: 22px;
+	}
+	.hero-content {
+		padding: 50px 90px;
+	}
+	.video {
+		height: 400px;
 	}
 }
